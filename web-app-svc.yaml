@@ -7,6 +7,5 @@ spec:
   selector:
     app: web
   ports:
-    protocol: TCP
-    port: 8080 #this is the external port
-    targetPort: 80 #this port must be the same with container port
+    - port: 8080 #this is the external port
+      targetPort: 8000 #this port must be the same with container port

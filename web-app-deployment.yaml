@@ -15,8 +15,8 @@ spec:
         app: web
     spec:
       containers:
-      - name: web-app
-        image: ngcr.io/google-samples/hello-app:1.0
+      - name: web
+        image: gcr.io/google-samples/hello-app:1.0
         ports:
-        - containerPort: 80
+        - containerPort: 8000
         
