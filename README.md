@@ -26,7 +26,16 @@ Access to the service via Url
 ```
 curl http://localhost:<nodePort-Port e.g 31726>
 ```
-Clear Resources
+**Create Ingeress:**
+```
+kubectl apply -f minimal-ingress.yaml
+```
+kubectl get ingress
+```
+```
+curl web-app-host.info
+```
+Delete all  Resources:
 ```
 kubectl delete all --all --all-namespaces
 ```
