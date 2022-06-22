@@ -8,4 +8,4 @@ spec:
     app: web
   ports:
     - port: 8080 #this is the external port
-      targetPort: 8000 #this port must be the same with container port
+      targetPort: 8080 #this port must be the same with container port
