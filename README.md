@@ -26,4 +26,8 @@ Access to the service via Url
 ```
 curl http://localhost:<nodePort-Port e.g 31726>
 ```
+Clear Resources
+```
+kubectl delete all --all --all-namespaces
+```
 
