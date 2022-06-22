@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: web-app-deployment
 spec:
-  type: NodePort
+  type: ClusterIp
   selector:
     app: web
   ports:
