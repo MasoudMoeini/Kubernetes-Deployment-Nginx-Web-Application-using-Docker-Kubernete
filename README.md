@@ -45,7 +45,7 @@ kubectl apply -f minimal-ingress.yaml
 ```
 kubectl get ingress
 ```
-Updating /etc/hosts file with "192.168.64.4 web-app-host.info" On macOs [Introduction](https://help.nexcess.net/en_US/miscellaneous/how-to-find-the-hosts-file-on-my-mac)
+Updating /etc/hosts file with "192.168.64.4 web-app-host.info" On macOs [Instuction](https://help.nexcess.net/en_US/miscellaneous/how-to-find-the-hosts-file-on-my-mac)
 ```
 curl web-app-host.info
 ```
