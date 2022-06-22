@@ -1,4 +1,4 @@
-# Kubernetes Deployment Nginx Web Application using Docker-Kubernetes
+# Kubernetes Deployment Web Application using Docker-Kubernetes
 Clone Repo and Enable Kubernetes Cluster on Docker Desctop. <br>
 RUN following command to create deployment and Service in Kubernetes cluster. <br>
 ```
