@@ -5,7 +5,7 @@ RUN following command to create deployment and Service in Kubernetes cluster. <b
 kubectl apply -f ./web-app-deployment.yaml
 ```
 ```
-kubectl get pods
+kubectl get pods -o wide
 ```
 Scaling a Deployment:
 ```
