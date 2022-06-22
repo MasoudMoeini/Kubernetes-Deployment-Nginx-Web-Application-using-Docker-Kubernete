@@ -25,8 +25,8 @@ kubectl get service web-app-deployment
 Access to the service via Url
 ```
 curl http://localhost:<nodePort-Port e.g 31726>
-```<br>
-**Create Ingeress:**  <br>
+```
+# Create Ingeress:
 ```
 kubectl apply -f minimal-ingress.yaml
 ```
@@ -40,6 +40,5 @@ Delete all  Resources:
 ```
 kubectl delete all --all --all-namespaces
 ```
-<br>
-<br>
+
 
