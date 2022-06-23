@@ -44,6 +44,7 @@ kubectl apply -f ./web-app-svc-lb.yaml
 make sure ingress-nginx-controller already installed: [Instruction](https://techdocs.broadcom.com/us/en/ca-enterprise-software/it-operations-management/dx-platform-on-premise/1-0/installing/reference-information/Verify-if-the-NGINX-Ingress-Controller-is-Running.html) 
 ```
 kubectl get all --all-namespaces
+kubectl get po -n ingress-nginx -o wide
 ```
 if not: [Instruction](https://docs.nginx.com/nginx-ingress-controller/installation/installation-with-helm/)
 ```
