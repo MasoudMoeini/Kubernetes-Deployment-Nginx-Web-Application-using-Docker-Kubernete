@@ -47,6 +47,9 @@ kubectl get all --all-namespaces
 ```
 if not: [Instruction](https://docs.nginx.com/nginx-ingress-controller/installation/installation-with-helm/)
 ```
+kubectl get pods -n ingress-nginx
+```
+```
 kubectl apply -f minimal-ingress.yaml
 ```
 ```
