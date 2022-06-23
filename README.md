@@ -53,6 +53,16 @@ kubectl get po -n my-release-nginx-ingress -o wide
 ```
 if not: [Instruction](https://docs.nginx.com/nginx-ingress-controller/installation/installation-with-helm/)
 ```
+git clone https://github.com/nginxinc/kubernetes-ingress.git --branch v2.2.2
+cd kubernetes-ingress/deployments/helm-chart
+helm repo add nginx-stable https://helm.nginx.com/stable
+helm repo update
+helm install my-release nginx-stable/nginx-ingress
+helm install my-release .
+kubectl apply -f crds/
+helm upgrade my-release .
+helm upgrade my-release nginx-stable/nginx-ingress
+```
 kubectl get pods -n ingress-nginx
 ```
 ```
@@ -61,7 +71,7 @@ kubectl apply -f minimal-ingress.yaml
 ```
 kubectl get ingress
 ```
-Updating /etc/hosts file with "192.168.64.4 web-app-host.info" On macOs [Instruction](https://help.nexcess.net/en_US/miscellaneous/how-to-find-the-hosts-file-on-my-mac)
+Updating /etc/hosts file with "127.0.0.1 web-app-host.info" On macOs [Instruction](https://help.nexcess.net/en_US/miscellaneous/how-to-find-the-hosts-file-on-my-mac)
 ```
 curl web-app-host.info
 ```
