@@ -48,8 +48,7 @@ kubectl apply -f ./web-app-svc-lb.yaml
 make sure ingress-nginx-controller already installed: [Instruction](https://techdocs.broadcom.com/us/en/ca-enterprise-software/it-operations-management/dx-platform-on-premise/1-0/installing/reference-information/Verify-if-the-NGINX-Ingress-Controller-is-Running.html) 
 ```
 kubectl get all --all-namespaces
-kubectl get pod/my-release-nginx-ingress
-kubectl get po -n my-release-nginx-ingress -o wide
+kubectl get pods
 ```
 if not: [Instruction](https://docs.nginx.com/nginx-ingress-controller/installation/installation-with-helm/)
 ```
@@ -63,7 +62,7 @@ kubectl apply -f crds/
 helm upgrade my-release .
 helm upgrade my-release nginx-stable/nginx-ingress
 ```
-kubectl get pods -n ingress-nginx
+kubectl get pods
 ```
 ```
 kubectl apply -f minimal-ingress.yaml
