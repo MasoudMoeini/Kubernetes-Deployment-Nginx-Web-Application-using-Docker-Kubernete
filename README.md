@@ -32,10 +32,14 @@ curl http://localhost:<nodePort-Port e.g 31726>
 In case of connection refuse error:
 ```
 curl -v http://localhost:8080/
-netstat -tlpen | grep 8080
-netstat -a -n -v | find "8080"
 ```
-
+Manually deployment
+```
+kubectl create deployment web --image=gcr.io/google-samples/hello-app:1.0
+kubectl expose deployment web --type=NodePort --port=8080
+kubectl get service 
+curl -v http://localhost:32138/
+```
 Create a Service for web-app-deployment(type: LoadBalancer) 
 ```
 kubectl apply -f ./web-app-svc-lb.yaml
@@ -45,7 +49,7 @@ make sure ingress-nginx-controller already installed: [Instruction](https://tech
 ```
 kubectl get all --all-namespaces
 kubectl get pod/my-release-nginx-ingress
-kubectl get po -n ingress-nginx -o wide
+kubectl get po -n my-release-nginx-ingress -o wide
 ```
 if not: [Instruction](https://docs.nginx.com/nginx-ingress-controller/installation/installation-with-helm/)
 ```
