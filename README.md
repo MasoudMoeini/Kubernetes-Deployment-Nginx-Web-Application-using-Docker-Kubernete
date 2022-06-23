@@ -29,6 +29,13 @@ curl <spec: ClusterIP e.g 10.98.125.249>:<port e.g 8080>
 ```
 curl http://localhost:<nodePort-Port e.g 31726>
 ```
+In case of connection refuse error:
+```
+curl -v http://localhost:8080/
+netstat -tlpen | grep 8080
+netstat -a -n -v | find "8080"
+```
+
 Create a Service for web-app-deployment(type: LoadBalancer) 
 ```
 kubectl apply -f ./web-app-svc-lb.yaml
