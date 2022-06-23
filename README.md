@@ -62,6 +62,7 @@ kubectl apply -f crds/
 helm upgrade my-release .
 helm upgrade my-release nginx-stable/nginx-ingress
 ```
+```
 kubectl get pods
 ```
 ```
