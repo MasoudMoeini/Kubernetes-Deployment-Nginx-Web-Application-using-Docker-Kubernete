@@ -44,6 +44,9 @@ Create a Service for web-app-deployment(type: LoadBalancer)
 ```
 kubectl apply -f ./web-app-svc-lb.yaml
 ```
+```
+kubectl get service web-app-deployment --output yaml
+```
 # Create Ingeress:
 make sure ingress-nginx-controller already installed: [Instruction](https://techdocs.broadcom.com/us/en/ca-enterprise-software/it-operations-management/dx-platform-on-premise/1-0/installing/reference-information/Verify-if-the-NGINX-Ingress-Controller-is-Running.html) 
 ```
